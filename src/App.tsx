@@ -5,8 +5,6 @@ const App: React.FC = () => {
     return (
         <div>
             <Todo/>
-            <Todo/>
-            <Todo/>
         </div>
     )
 };
