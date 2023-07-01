@@ -3,19 +3,21 @@ import TodoItem from "./TodoItem";
 import "./style.css";
 
 interface ITodoItem {
-  id : number;
-  title : string;
+  id: number;
+  title: string;
 }
 
 interface TodoProps {
-  items : ITodoItem[];
+  items: ITodoItem[];
 }
 
 const Todo: React.FC<TodoProps> = (props) => {
   return (
     <div className="todo-container">
       <ol>
-        {props.items.map((item) => (<TodoItem title={item.title}/>))}
+        {props.items.map(({id , title}) => (
+          <TodoItem key={id} title={title} />
+        ))}
       </ol>
     </div>
   );
