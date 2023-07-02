@@ -1,0 +1,18 @@
+.counter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 40px;
+    height: 30px;
+    margin-left: 15px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h1{
+    color: blue;
+    margin-left: 20px;
+}

@@ -15,9 +15,13 @@ const Todo: React.FC<TodoProps> = (props) => {
   return (
     <div className="todo-container">
       <ol>
-        {props.items.map(({id , title}) => (
-          <TodoItem key={id} title={title} />
-        ))}
+        {props.items.map(
+          (
+            { id, title } // use id, title seperately instead of item for destructing purposes
+          ) => (
+            <TodoItem key={id} title={title} />
+          )
+        )}
       </ol>
     </div>
   );

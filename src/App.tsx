@@ -1,5 +1,6 @@
-import React from "react";
+import React  from "react";
 import Todo from "./components/Todo";
+import Counter from "./components/Counter";
 
 const myTodoItems = [
   {
@@ -19,7 +20,8 @@ const myTodoItems = [
 const App: React.FC = () => {
   return (
     <div>
-      <Todo items={myTodoItems} />
+      {/* <Todo items={myTodoItems} /> */}
+      <Counter/>
     </div>
   );
 };
